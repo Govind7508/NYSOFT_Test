@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Button to select images -->
+        <Button
+            android:id="@+id/btnSelectImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Images" />
+
+        <!-- RecyclerView to display selected images -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal" />
+
+        <!-- Button to upload images -->
+        <Button
+            android:id="@+id/btnUploadImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Images" />
+
+        <!-- TextView to display the result of the upload -->
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Result will be displayed here" />
+    </LinearLayout>
+</layout>
